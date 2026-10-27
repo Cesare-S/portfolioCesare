@@ -56,7 +56,7 @@ h1 span { color: var(--green); }
 .section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; margin-bottom: 35px; }
 h2 { margin-top: 14px; font-size: clamp(27px, 3vw, 35px); font-weight: 650; letter-spacing: -1.2px; line-height: 1.2; }
 .section-heading > p { color: var(--muted); font-size: 13px; line-height: 1.8; }
-.skills-grid, .projects-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.skills-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .skill-card { padding: 27px; border: 1px solid var(--line); border-radius: var(--radius); }
 .core-skills { background: var(--tint); border-color: var(--tint); }
 .card-symbol { display: flex; align-items: center; min-height: 35px; color: var(--green); font-family: ui-monospace, monospace; font-size: 24px; font-weight: 600; }
@@ -66,28 +66,21 @@ h3 { font-size: 17px; font-weight: 650; letter-spacing: -.35px; }
 .tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 22px 0 0; padding: 0; list-style: none; }
 .tags li { padding: 4px 10px; border: 1px solid var(--line); border-radius: 6px; font-size: 11px; background: var(--surface); }
 .core-skills .tags li { color: var(--green-dark); border-color: #c4d7c2; }
-.projects-section { margin-top: 16px; background: #edf0ea; border-block: 1px solid #e6eae2; }
-.project-card { display: flex; flex-direction: column; padding: 26px; border: 1px solid #e0e5dc; border-radius: var(--radius); background: var(--surface); }
-.project-icon { display: flex; align-items: center; justify-content: center; width: 65px; height: 65px; border-radius: 16px; margin-bottom: 27px; }
-.project-icon svg { width: 36px; height: 36px; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-.icon-surveys { background: #eaf0e6; color: #537548; }
-.icon-parking { background: #e9eff8; color: #506e9d; }
-.icon-ar { background: #f5ece3; color: #9b6f40; }
-.project-category { margin-bottom: 10px; color: var(--muted); font-size: 10px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
-.project-card > p:not(.project-category) { margin-block: 15px 27px; color: var(--muted); font-size: 13px; }
-.project-footer { display: flex; justify-content: space-between; gap: 15px; margin-top: auto; padding-top: 17px; border-top: 1px solid var(--line); color: var(--muted); font-size: 10px; }
-.project-footer span { color: var(--green); font-family: ui-monospace, monospace; }
-.github-link { margin-top: 26px; }
-.experience-section { display: grid; grid-template-columns: 1fr 1.2fr; gap: 100px; padding-block: 90px; }
+.skills-note { margin-top: 22px; color: var(--muted); font-size: 13px; }
+.experience-section { display: grid; grid-template-columns: .85fr 1.4fr; gap: 72px; padding-block: 76px 90px; border-top: 1px solid var(--line); }
 .experience-intro > p:not(.eyebrow) { max-width: 330px; margin-top: 22px; color: var(--muted); font-size: 14px; }
 .experience-intro p.education { padding-top: 17px; border-top: 1px solid var(--line); font-size: 12px; }
 .timeline { margin: 0; padding: 0 0 0 28px; border-left: 1px solid var(--line); list-style: none; }
-.timeline li { position: relative; padding-bottom: 38px; }
-.timeline li:last-child { padding-bottom: 0; }
-.timeline li::before { content: ""; position: absolute; left: -33px; top: 6px; width: 9px; height: 9px; border: 3px solid var(--background); border-radius: 50%; background: var(--green); box-sizing: content-box; }
+.timeline > li { position: relative; padding-bottom: 38px; }
+.timeline > li:last-child { padding-bottom: 0; }
+.timeline > li::before { content: ""; position: absolute; left: -33px; top: 6px; width: 9px; height: 9px; border: 3px solid var(--background); border-radius: 50%; background: var(--green); box-sizing: content-box; }
 .timeline-date { margin-bottom: 13px; color: var(--green); font-size: 11px; font-weight: 650; letter-spacing: .6px; }
 .timeline-context { margin-block: 7px 13px; color: var(--muted); font-size: 11px; }
-.timeline li > p:last-child { color: var(--muted); font-size: 13px; }
+.timeline > li > p:not(.timeline-date):not(.timeline-context) { color: var(--muted); font-size: 13px; }
+.timeline > li > p + p:not(.timeline-context) { margin-top: 12px; }
+.experience-details { margin: 15px 0 0; padding-left: 18px; color: var(--muted); font-size: 13px; }
+.experience-details li + li { margin-top: 7px; }
+.experience-details li::marker { color: var(--green); }
 .contact-section { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 70px; margin-bottom: 65px; padding: 48px; background: var(--tint); border: 1px solid #e0e8da; border-radius: 22px; }
 .contact-copy h2 { font-size: 36px; }
 .contact-copy > p:not(.eyebrow) { max-width: 380px; margin-top: 19px; color: var(--muted); font-size: 13px; }
@@ -111,7 +104,7 @@ h3 { font-size: 17px; font-weight: 650; letter-spacing: -.35px; }
   .hero-actions { gap: 18px; }
   .hero-description { font-size: 15px; }
   .portrait-caption { font-size: 9px; }
-  .skill-card, .project-card { padding: 22px; }
+  .skill-card { padding: 22px; }
   .section-heading > p { max-width: 250px; }
   .desktop-break { display: none; }
   .experience-section { gap: 55px; }
@@ -136,13 +129,11 @@ h3 { font-size: 17px; font-weight: 650; letter-spacing: -.35px; }
   .section { padding-block: 53px; }
   .section-heading { display: block; margin-bottom: 27px; }
   .section-heading > p { margin-top: 17px; max-width: 100%; }
-  .skills-grid, .projects-grid { grid-template-columns: 1fr; gap: 14px; }
-  .skill-card, .project-card { padding: 25px; }
+  .skills-grid { grid-template-columns: 1fr; gap: 14px; }
+  .skill-card { padding: 25px; }
   .skill-card h3 { margin-top: 13px; }
   .skill-card p { max-width: 500px; }
   .tags { margin-top: 18px; }
-  .project-icon { width: 55px; height: 55px; margin-bottom: 20px; border-radius: 13px; }
-  .project-icon svg { width: 31px; height: 31px; }
   .experience-section { grid-template-columns: 1fr; gap: 35px; }
   .experience-intro > p:not(.eyebrow) { max-width: 100%; }
   .experience-intro h2 br { display: none; }

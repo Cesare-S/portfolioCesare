@@ -28,6 +28,8 @@ Documentazione: [creare un sito GitHub Pages](https://docs.github.com/en/pages/g
 - Colori e impaginazione: `styles.css`, con variabili iniziali per i colori.
 - Avatar e icona del sito: file SVG in `assets/`.
 
-I tre progetti sono una selezione anonima. Le descrizioni riportano soltanto gli ambiti forniti da Cesare, senza attribuire tecnologie, responsabilità specifiche o risultati non confermati. Aggiungere nomi, link e dettagli quando disponibili e pubblicabili.
+Il percorso racconta le esperienze in azienda, i progetti personali e le collaborazioni con altri freelance. Non viene pubblicata una selezione di singoli progetti: nomi, schermate, link e casi di studio potranno essere aggiunti quando autorizzati. I nomi delle aziende restano omessi.
+
+Il file `cv_copiato.txt` è materiale di lavoro locale, escluso da Git tramite `.gitignore`. È usato soltanto come fonte per esperienze e dettagli professionali: non viene collegato o proposto come CV scaricabile. La disponibilità resta per collaborazioni da remoto; i riferimenti al trasferimento presenti nel CV non vengono ripresi nel sito.
 
 Nessun cookie, analytics, font remoto o modulo di contatto. L’email apre il programma di posta del visitatore; GitHub e LinkedIn collegano i profili pubblici.
