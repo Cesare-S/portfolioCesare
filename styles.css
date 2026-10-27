@@ -56,17 +56,17 @@ h1 span { color: var(--green); }
 .section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; margin-bottom: 35px; }
 h2 { margin-top: 14px; font-size: clamp(27px, 3vw, 35px); font-weight: 650; letter-spacing: -1.2px; line-height: 1.2; }
 .section-heading > p { color: var(--muted); font-size: 13px; line-height: 1.8; }
-.skills-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
-.skill-card { padding: 27px; border: 1px solid var(--line); border-radius: var(--radius); }
+.skills-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.skill-card { display: flex; flex-direction: column; align-items: flex-start; padding: 27px; border: 1px solid var(--line); border-radius: var(--radius); }
 .core-skills { background: var(--tint); border-color: var(--tint); }
 .card-symbol { display: flex; align-items: center; min-height: 35px; color: var(--green); font-family: ui-monospace, monospace; font-size: 24px; font-weight: 600; }
 h3 { font-size: 17px; font-weight: 650; letter-spacing: -.35px; }
 .skill-card h3 { margin-top: 20px; }
 .skill-card p { margin-top: 12px; color: var(--muted); font-size: 13px; }
+.skill-card .tags { margin-top: auto; padding-top: 22px; }
 .tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 22px 0 0; padding: 0; list-style: none; }
 .tags li { padding: 4px 10px; border: 1px solid var(--line); border-radius: 6px; font-size: 11px; background: var(--surface); }
 .core-skills .tags li { color: var(--green-dark); border-color: #c4d7c2; }
-.skills-note { margin-top: 22px; color: var(--muted); font-size: 13px; }
 .experience-section { display: grid; grid-template-columns: .85fr 1.4fr; gap: 72px; padding-block: 76px 90px; border-top: 1px solid var(--line); }
 .experience-intro > p:not(.eyebrow) { max-width: 330px; margin-top: 22px; color: var(--muted); font-size: 14px; }
 .experience-intro p.education { padding-top: 17px; border-top: 1px solid var(--line); font-size: 12px; }
@@ -104,6 +104,7 @@ h3 { font-size: 17px; font-weight: 650; letter-spacing: -.35px; }
   .hero-actions { gap: 18px; }
   .hero-description { font-size: 15px; }
   .portrait-caption { font-size: 9px; }
+  .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .skill-card { padding: 22px; }
   .section-heading > p { max-width: 250px; }
   .desktop-break { display: none; }

@@ -2,7 +2,7 @@
 
 Portfolio in italiano, realizzato con HTML e CSS. Nessuna dipendenza o compilazione.
 
-La pagina presenta quattro servizi (sviluppo PHP/Laravel, integrazioni API, manutenzione e nuove funzionalità, personalizzazioni WordPress), un percorso professionale sintetico e i contatti. Le collaborazioni con aziende e freelance sono evidenziate nella presentazione. L’ancora `#competenze` resta valida per la sezione servizi.
+La pagina presenta sei servizi: sviluppo PHP/Laravel, integrazioni API, manutenzione e nuove funzionalità, CMS ed e-commerce (WordPress, Shopify e altre piattaforme), app Flutter e sviluppo Java. Seguono un percorso professionale sintetico e i contatti. Le schede sono disposte su tre colonne su desktop, due su tablet e una su mobile. Le collaborazioni con aziende e freelance sono evidenziate nella presentazione. L’ancora `#competenze` resta valida per la sezione servizi.
 
 ## Anteprima locale
 
